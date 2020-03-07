@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bellota:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i&display=swap");
+
+.TodoTemplate {
+  width: 350px;
+  padding: 40px 50px;
+  margin: 150px auto 0;
+  background-color: white;
+  box-shadow: 10px 10px 10px #c1c0b9;
+
+  .app_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+
+    .date_area {
+      display: flex;
+      color: #333;
+      font-family: "Bellota";
+
+      .left_col {
+        .day_area {
+          margin-right: 5px;
+          font-weight: 700;
+          font-size: 40px;
+        }
+      }
+      .right_col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .month_area {
+          font-family: "Roboto";
+          font-size: 14px;
+        }
+        .year_area {
+          line-height: 1;
+        }
+      }
+    }
+
+    .title {
+      color: #50e3a4;
+      font: italic 700 35px "Roboto Condensed";
+      letter-spacing: -0.5px;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.TodoObject {
+  display: flex;
+  align-items: center;
+  padding: 13px 0;
+  border-bottom: 1px solid #eee;
+  color: #333;
+
+  .checkbox {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    cursor: pointer;
+
+    svg {
+      font-size: 18px;
+    }
+
+    .text {
+      flex: 1;
+      margin-left: 12px;
+    }
+
+    // 체크되었을 때
+    &.checked {
+      svg {
+        color: #50e3a4;
+      }
+
+      .text {
+        color: #888;
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  .remove {
+    display: flex;
+    color: #ff6b6bc9;
+    font-size: 21px;
+    cursor: pointer;
+    &:hover {
+      color: #ff6b6b;
+    }
+  }
+}
