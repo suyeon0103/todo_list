@@ -5,6 +5,11 @@
   border-bottom: 1px solid #eee;
   color: #333;
 
+  // 중요 표시되었을 때
+  &.star {
+    order: -1;
+  }
+
   .checkbox {
     display: flex;
     flex: 1;
@@ -33,8 +38,24 @@
     }
   }
 
+  .important {
+    display: flex;
+    color: #ccc;
+    font-size: 21px;
+    cursor: pointer;
+    &:hover {
+      color: #f0f351;
+    }
+
+    // 중요 표시되었을 때
+    &.star {
+      color: #f0f351;
+    }
+  }
+
   .remove {
     display: flex;
+    margin-left: 5px;
     color: #ff6b6bc9;
     font-size: 21px;
     cursor: pointer;
