@@ -9,7 +9,7 @@ const App = () => {
       id: 1,
       text: '리액트 공부하기',
       checked: true,
-      star: true,
+      star: false,
     },
     {
       id: 2,
@@ -19,9 +19,9 @@ const App = () => {
     },
     {
       id: 3,
-      text: '방 정리하기',
+      text: '방 청소하기',
       checked: false,
-      star: false,
+      star: true,
     },
   ]);
 
